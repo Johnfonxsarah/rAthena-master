@@ -61489,17 +61489,25 @@ Body:
     Script: |
       getgroupitem(IG_GUNSLINGER_SCROLL);
   - Id: 23165
-    AegisName: Service30_AID_Buff
-    Name: Premium Service Personnel
-    Type: Usable
+    AegisName: Premium_Service_Staff
+    Name: Premium Service Staff
+    Type: Delayconsume
+    Flags:
+      UniqueId: true
+    Delay:
+      Duration: 30000
     Trade:
+      Override: 100
       NoDrop: true
       NoTrade: true
+      TradePartner: true
       NoSell: true
       NoCart: true
       NoGuildStorage: true
       NoMail: true
       NoAuction: true
+    Script: |
+      duplicate_dynamic("Premi");
 #   Script: |
 #     /* TODO */
   - Id: 23167
@@ -61871,19 +61879,21 @@ Body:
     Script: |
       getgroupitem(IG_NEW_HAT_BOX2);
   - Id: 23207
-    AegisName: Premium_Box
-    Name: "[30Day] Premium Subscription Box"
-    Type: Usable
+    AegisName: Premium_Service_Box
+    Name: Premium Service Box
+    Type: Delayconsume
+    Buy: 2
     Weight: 10
     Trade:
       NoDrop: true
-      NoTrade: true
       NoSell: true
+      NoTrade: true
       NoCart: true
       NoGuildStorage: true
       NoMail: true
       NoAuction: true
     Script: |
+      callfunc "Premium_Service_Box";
       /* TODO */
   - Id: 23209
     AegisName: Premium_Box_1d

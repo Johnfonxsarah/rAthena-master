@@ -1933,7 +1933,17 @@
 	export_constant(SC_CONTENTS_8);
 	export_constant(SC_CONTENTS_9);
 	export_constant(SC_CONTENTS_10);
-	
+
+	/*   premium   */
+	export_constant(SC_AID_PERIOD_ADDSTOREITEMCOUNT);
+	export_constant(SC_AID_PERIOD_DEADPENALTY);
+	export_constant(SC_AID_PERIOD_PLUSEXP);
+	export_constant(SC_AID_PERIOD_PLUSJOBEXP);
+	export_constant(SC_AID_PERIOD_RECEIVEITEM);
+	export_constant(SC_AID_PERIOD_PLUSEXP_2ND);
+	export_constant(SC_AID_PERIOD_PLUSJOBEXP_2ND);
+	export_constant(SC_AID_PERIOD_RECEIVEITEM_2ND);
+
 	/* status icons */
 	export_deprecated_constant2("SI_BLANK",-1);
 	export_deprecated_constant2("SI_PROVOKE",0);
