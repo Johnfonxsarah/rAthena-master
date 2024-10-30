@@ -83609,3 +83609,966 @@ Body:
       NoAuction: true
     Script: |
       itemheal 2000,0; /* average value */
+  - Id: 1200001
+    AegisName: Topup50_Box
+    Name: Topup50 Box
+    Type: Cash
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem 1300010,5;
+      getitem 1200104,1;
+  - Id: 1200002
+    AegisName: Topup100_Box
+    Name: Topup100 Box
+    Type: Cash
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem 1300010,10;
+      getitem 1200104,3;
+      getitem 1200107,1;
+  - Id: 1200003
+    AegisName: Topup300_Box
+    Name: Topup300 Box
+    Type: Cash
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem 1300010,30;
+      getitem 1200104,10;
+      getitem 1200107,3;
+  - Id: 1200004
+    AegisName: Topup500_Box
+    Name: Topup500 Box
+    Type: Cash
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem 1300010,50;
+      getitem 1200104,20;
+      getitem 1200107,6;
+  - Id: 1200005
+    AegisName: Topup1000_Box
+    Name: Topup1000 Box
+    Type: Cash
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem 1300010,100;
+      getitem 1200104,45;
+      getitem 1200107,13;
+  - Id: 1200006
+    AegisName: Topup3000_Box
+    Name: Topup3000 Box
+    Type: Cash
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem 1300010,300;
+      getitem 1200104,140;
+      getitem 1200107,42;
+  - Id: 1200007
+    AegisName: Topup5000_Box
+    Name: Topup5000 Box
+    Type: Cash
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem 1300010,500;
+      getitem 1200104,300;
+      getitem 1200107,90;
+  - Id: 1200008
+    AegisName: Cash_Coin
+    Name: Cash Coin
+    Type: Usable
+    Flags:
+      BuyingStore: true
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+      NoGuildStorage: true
+      NoAuction: true
+    Script: |
+      atcommand "@cash 1";
+  - Id: 1200009
+    AegisName: 50_Cash_Coin
+    Name: 50 Cash Coin
+    Type: Usable
+    Flags:
+      BuyingStore: true
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+      NoGuildStorage: true
+      NoAuction: true
+    Script: |
+      atcommand "@cash 50";
+  - Id: 1200010
+    AegisName: 100_Cash_Coin
+    Name: 100 Cash Coin
+    Type: Usable
+    Flags:
+      BuyingStore: true
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+      NoGuildStorage: true
+      NoAuction: true
+    Script: |
+      atcommand "@cash 100";
+  - Id: 1200011
+    AegisName: 500_Cash_Coin
+    Name: 500 Cash Coin
+    Type: Usable
+    Flags:
+      BuyingStore: true
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+      NoGuildStorage: true
+      NoAuction: true
+    Script: |
+      atcommand "@cash 500";
+  - Id: 1200012
+    AegisName: 1000_Cash_Coin
+    Name: 1000 Cash Coin
+    Type: Usable
+    Flags:
+      BuyingStore: true
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+      NoGuildStorage: true
+      NoAuction: true
+    Script: |
+      atcommand "@cash 1000";
+  - Id: 1200013
+    AegisName: Sky_fortress_box
+    Name: Sky fortress box
+    Type: Cash
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+    Script: |
+      rentitem 14505,3600;
+  - Id: 1200033
+    AegisName: fishing_box
+    Name: fishing box
+    Type: Cash
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+    Script: |
+      rentitem 2764,28800;
+      rentitem 2775,28800;
+      rentitem 2550,28800;
+      rentitem 2443,28800;
+  - Id: 1200034
+    AegisName: Mining_box
+    Name: Mining box
+    Type: Cash
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+    Script: |
+      rentitem 93001,28800;
+      rentitem 93002,28800;
+      rentitem 93003,28800;
+      rentitem 93004,28800;
+  - Id: 1200035
+    AegisName: Common_MVP_box
+    Name: Common MVP box
+    Type: Usable
+    Flags:
+      BuyingStore: true
+      DropEffect: BLUE_PILLAR
+    Trade:
+      Override: 100
+      NoSell: true
+    Script: |
+      getgroupitem(IG_BOSS_BOX_COMMON);
+      Zeny += rand(1000,3000);
+  - Id: 1200036
+    AegisName: Rare_MVP_box
+    Name: Rare MVP box
+    Type: Usable
+    Flags:
+      BuyingStore: true
+      DropEffect: PURPLE_PILLAR
+    Trade:
+      Override: 100
+      NoSell: true
+    Script: |
+      getgroupitem(IG_BOSS_BOX_RARE);
+      Zeny += rand(3000,5000);
+  - Id: 1200037
+    AegisName: Epic_MVP_box
+    Name: Epic MVP box
+    Type: Usable
+    Flags:
+      BuyingStore: true
+      DropEffect: RED_PILLAR
+    Trade:
+      Override: 100
+      NoSell: true
+    Script: |
+      getgroupitem(IG_BOSS_BOX_EPIC);
+      Zeny += rand(5000,10000);
+  - Id: 1200038
+    AegisName: Legend_MVP_box
+    Name: Legend MVP box
+    Type: Usable
+    Flags:
+      BuyingStore: true
+      DropEffect: YELLOW_PILLAR
+    Trade:
+      Override: 100
+      NoSell: true
+    Script: |
+      getgroupitem(IG_BOSS_BOX_LEGEND);
+      Zeny += rand(10000,50000);
+  - Id: 1200039
+    AegisName: fishing_box1
+    Name: fishing box1
+    Type: Cash
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+    Script: |
+      rentitem 2764,86400;
+      rentitem 2775,86400;
+      rentitem 2550,86400;
+      rentitem 2443,86400;
+  - Id: 1200040
+    AegisName: fishing_box7
+    Name: fishing box7
+    Type: Cash
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+    Script: |
+      rentitem 2764,604800;
+      rentitem 2775,604800;
+      rentitem 2550,604800;
+      rentitem 2443,604800;
+  - Id: 1200041
+    AegisName: Mining_box1
+    Name: Mining box1
+    Type: Cash
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+    Script: |
+      rentitem 93001,86400;
+      rentitem 93002,86400;
+      rentitem 93003,86400;
+      rentitem 93004,86400;
+  - Id: 1200042
+    AegisName: Mining_box7
+    Name: Mining box7
+    Type: Cash
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+    Script: |
+      rentitem 93001,604800;
+      rentitem 93002,604800;
+      rentitem 93003,604800;
+      rentitem 93004,604800;
+  - Id: 1200043
+    AegisName: Stone_Sura_box
+    Name: Stone Sura box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25409,25410,25411,25412),1;
+  - Id: 1200044
+    AegisName: Stone_Ranger_box
+    Name: Stone Ranger box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25413,25414,25415,25416),1;
+  - Id: 1200045
+    AegisName: Stone_Sorcerer_box
+    Name: Stone Sorcerer box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25417,25418,25419,25420),1;
+  - Id: 1200046
+    AegisName: Stone_Runeknight_box
+    Name: Stone Runeknight box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25445,25446,25447,25448),1;
+  - Id: 1200047
+    AegisName: Stone_Genetic_box
+    Name: Stone Genetic box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25449,25450,25451,25452),1;
+  - Id: 1200048
+    AegisName: Stone_Warlock_box
+    Name: Stone Warlock box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25453,25454,25455,25456),1;
+  - Id: 1200049
+    AegisName: Stone_Shadowchaser_box
+    Name: Stone Shadowchaser box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25490,25491,25492,25493),1;
+  - Id: 1200050
+    AegisName: Stone_Mechanic_box
+    Name: Stone Mechanic box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25494,25495,25496,25497),1;
+  - Id: 1200051
+    AegisName: Stone_WanderMinstre_box
+    Name: Stone WanderMinstre box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25498,25499,25500,25501),1;
+  - Id: 1200052
+    AegisName: Stone_Highpries_box
+    Name: Stone Highpries box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25706,25707,25708,25709),1;
+  - Id: 1200053
+    AegisName: Stone_Paladin_box
+    Name: Stone Paladin box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25710,25711,25712,25713),1;
+  - Id: 1200054
+    AegisName: Stone_Assacross_box
+    Name: Stone Assacross box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25714,25715,25716,25717),1;
+  - Id: 1200055
+    AegisName: Stone_SoulLinker_box
+    Name: Stone SoulLinker box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25842,25843,25844,25845),1;
+  - Id: 1200056
+    AegisName: Stone_StarGladiator_box
+    Name: Stone StarGladiator box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25846,25847,25848,25849),1;
+  - Id: 1200057
+    AegisName: Stone_NinjaStone_box
+    Name: Stone Ninja box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25850,25851,25852,25853,25854),1;
+  - Id: 1200058
+    AegisName: Stone_Gunslinger_box
+    Name: Stone Gunslinger box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25855,25856,25857,25858),1;
+  - Id: 1200059
+    AegisName: Stone_Doram_box
+    Name: Stone Doram box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25859,25860,25861,25862),1;
+  - Id: 1200060
+    AegisName: Stone_Costume_BOX
+    Name: Stone Costume BOX
+    Type: Cash
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",1200014,1200014,1200014,1200014,1200015,1200015,1200016,1200016,1200016,1200016,1200017),1;
+  - Id: 1200061
+    AegisName: Chai_Stone_BOX
+    Name: Chai Stone BOX
+    Type: Usable
+    Flags:
+      BuyingStore: true
+      DropEffect: RED_PILLAR
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",1300088,1300090,1300092,1300094,1300096,1300098,1300100,1300100,1300098,1300096,1300094,1300092,1300090),1;
+  - Id: 1200062
+    AegisName: Donate11_BOX
+    Name: Donate11 BOX
+    Type: Usable
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",90214,90215,90216,1300102,1300103,1300104,1300105,1300106,1300102,1300103,1300104,1300105,1300106),1;
+  - Id: 1200063
+    AegisName: Auto_Ai
+    Name: Auto Ai
+    Type: Delayconsume
+    Flags:
+      UniqueId: true
+    Delay:
+      Duration: 5000
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      TradePartner: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      callfunc "@boton";
+  - Id: 1200064
+    AegisName: Auto_Ai_Box_1Day
+    Name: Auto Ai Box 1Day
+    Type: Cash
+    Trade:
+      Override: 100
+      NoDrop: true
+    Script: |
+      rentitem 1200106,86400;
+  - Id: 1200065
+    AegisName: Auto_Ai_Box_7Day
+    Name: Auto Ai Box 7Day
+    Type: Cash
+    Trade:
+      Override: 100
+      NoDrop: true
+    Script: |
+      rentitem 20183,604800;
+      rentitem 1200106,604800;
+  - Id: 1200066
+    AegisName: Auto_Ai_Box_30Day
+    Name: Auto Ai Box 30Day
+    Type: Cash
+    Trade:
+      Override: 100
+      NoDrop: true
+    Script: |
+      rentitem 20183,2592000;
+      rentitem 1200106,2592000;
+  - Id: 1200067
+    AegisName: Donate_BOX
+    Name: Donate BOX
+    Type: Usable
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",12412,12412,12412,12412,12412,12412,12411,12411,12411,12411,12411,12411,12411,14766,14766,14766,14766,14766,14766,12883,12883,12883,12883,23436,23436,23436,23436,23436,23436,23436,6635,6635,6635,6635,6635,6635,6635,6635,6635,6635,6635,6635,6635,2589,480058,20404),1;
+  - Id: 1200068
+    AegisName: Rune_Knight_Shadow_Box1
+    Name: Rune Knight Shadow Box1
+    Type: Usable
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",24288,24301,24269,24256,24246,24250),1;
+  - Id: 1200069
+    AegisName: Royal_Guard_Shadow_BOX
+    Name: Royal Guard Shadow Box
+    Type: Usable
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",24289,24302,24270,24257,24246,24250),1;
+  - Id: 1200070
+    AegisName: Mechanic_Shadow_BOX
+    Name: Mechanic Shadow Box
+    Type: Usable
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",24290,24303,24271,24258,24247,24251),1;
+  - Id: 1200071
+    AegisName: Genetic_Shadow_BOX
+    Name: Genetic Shadow Box
+    Type: Usable
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",24291,24304,24272,24259,24247,24251),1;
+  - Id: 1200072
+    AegisName: Arch_Bishop_Shadow_BOX
+    Name: Arch Bishop Shadow Box
+    Type: Usable
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",24292,24305,24273,24260,24248,24252),1;
+  - Id: 1200073
+    AegisName: Sura_Shadow_BOX
+    Name: Sura Shadow Box
+    Type: Usable
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",24293,24306,24274,24261,24248,24252),1;
+  - Id: 1200074
+    AegisName: Guillotine_Cross_Shadow_BOX
+    Name: Guillotine Cross Shadow Box
+    Type: Usable
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",24294,24307,24275,24262,28391,24253),1;
+  - Id: 1200075
+    AegisName: Shadow_Chaser_Shadow_BOX
+    Name: Shadow Chaser Shadow Box
+    Type: Usable
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",24295,24308,24276,24263,28391,24253),1;
+  - Id: 1200076
+    AegisName: Warlock_Shadow_BOX
+    Name: Warlock Shadow Box
+    Type: Usable
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",24296,24309,24277,24264,24249,24254),1;
+  - Id: 1200077
+    AegisName: Sorcerer_Shadow_BOX
+    Name: Sorcerer Shadow Box
+    Type: Usable
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",24297,24310,24278,24265,24249,24254),1;
+  - Id: 1200078
+    AegisName: Ranger_Shadow_BOX
+    Name: Ranger Shadow Box
+    Type: Usable
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",24298,24311,24279,24266,28392,24255),1;
+  - Id: 1200079
+    AegisName: Minstrel_Shadow_BOX
+    Name: Minstrel Shadow Box
+    Type: Usable
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",24299,24312,24280,24267,28392,24255),1;
+  - Id: 1200080
+    AegisName: Wanderer_Shadow_BOX
+    Name: Wanderer Shadow Box
+    Type: Usable
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",24300,24313,24281,24268,28392,24255),1;
+  - Id: 1200081
+    AegisName: Rebellion_Shadow_BOX
+    Name: Rebellion Shadow Box
+    Type: Usable
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",24402,24405,24283,24319),1;
+  - Id: 1200082
+    AegisName: Kagerou_Oboro_Shadow_BOX
+    Name: Kagerou Oboro Shadow Box
+    Type: Usable
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",24403,24406,24285,24314,24404,24407),1;
+  - Id: 1200083
+    AegisName: Doram_Shadow_BOX
+    Name: Doram Shadow Box
+    Type: Usable
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",24408,24316,24409,24287,24410,24317,24411,24286),1;
+  - Id: 1200084
+    AegisName: Star_Emperor_Soul_Reaper_Shadow_BOX
+    Name: Star Emperor Soul Reaper Shadow Box
+    Type: Usable
+    Trade:
+      Override: 10
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem callfunc("F_Rand",24412,24413,24315,24284,24414,24415),1;
+  - Id: 1200085
+    AegisName: Stone_Sura_2_box
+    Name: Stone Sura 2 box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25800,25799,25798,25797),1;
+  - Id: 1200086
+    AegisName: Stone_Sorcerer_2_box
+    Name: Stone Sorcerer 2 box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25804,25803,25802,25801),1;
+  - Id: 1200087
+    AegisName: Stone_Shadowchaser_2_box
+    Name: Stone Shadowchaser 2 box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",25808,25807,25806,25805),1;
+  - Id: 1200088
+    AegisName: Stone_Ranger_2_box
+    Name: Stone Ranger 2 box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",1000008,1000009,1000010,1000011),1;
+  - Id: 1200089
+    AegisName: Stone_Mechanic_2_box
+    Name: Stone Mechanic 2 box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",1000012,1000013,1000014,1000015),1;
+  - Id: 1200090
+    AegisName: Stone_Archbishop_2_box
+    Name: Stone Archbishop 2 box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",1000016,1000017,1000018,1000019),1;
+  - Id: 1200091
+    AegisName: Stone_Warlock_2_box
+    Name: Stone Warlock 2 box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",1000214,1000215,1000216,1000213),1;
+  - Id: 1200092
+    AegisName: Stone_Royalguard_2_box
+    Name: Stone RoyalGuard 2 box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",1000218,1000219,1000220,1000217),1;
+  - Id: 1200093
+    AegisName: Stone_Guillotine_2_box
+    Name: Stone Guillotine 2 box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",1000222,1000223,1000224,1000221),1;
+  - Id: 1200094
+    AegisName: Stone_Runeknight_2_box
+    Name: Stone Runeknight 2 box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",1000297,1000298,1000299,1000296),1;
+  - Id: 1200095
+    AegisName: Stone_Genetic_2_box
+    Name: Stone Genetic 2 box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",1000301,1000302,1000303,1000300),1;
+  - Id: 1200096
+    AegisName: Stone_WanderMins_2_box
+    Name: Stone WanderMins 2 box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",1000305,1000306,1000307,1000304),1;
+  - Id: 1200097
+    AegisName: Stone_mix_box
+    Name: Stone mix 2 box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",1200085,1200086,1200087,1200088,1200089,1200090,1200091,1200092,1200093,1200094,1200095,1200096),1;
+  - Id: 1200098
+    AegisName: Common_Monster_bag
+    Name: Common Monster bag
+    Type: Usable
+    Flags:
+      BuyingStore: true
+      DropEffect: BLUE_PILLAR
+    Trade:
+      Override: 100
+      NoSell: true
+    Script: |
+      Zeny += rand(10000,50000);
+  - Id: 1200099
+    AegisName: Rare_Monster_bag
+    Name: Rare Monster bag
+    Type: Usable
+    Flags:
+      BuyingStore: true
+      DropEffect: RED_PILLAR
+    Trade:
+      Override: 100
+      NoSell: true
+    Script: |
+      Zeny += rand(50000,90000);
+  - Id: 1200100
+    AegisName: Legend_Monster_bag
+    Name: Legend Monster bag
+    Type: Usable
+    Flags:
+      BuyingStore: true
+      DropEffect: YELLOW_PILLAR
+    Trade:
+      Override: 100
+      NoSell: true
+    Script: |
+      Zeny += rand(90000,150000);
+  - Id: 1200101
+    AegisName: Gacha_Rank_1_Box
+    Name: Gacha Rank 1 Box
+    Type: Usable
+    Weight: 10
+    Trade:
+      NoDrop: true
+    Script: |
+      getitem 1300085,100;
+      getitem 6584,1;
+      getitem 6585,1;
+  - Id: 1200102
+    AegisName: Gacha_Rank_2_Box
+    Name: Gacha Rank 2 Box
+    Type: Usable
+    Weight: 10
+    Trade:
+      NoDrop: true
+    Script: |
+      getitem 1300085,50;
+      getitem 6238,1;
+      getitem 6239,1;
+  - Id: 1200103
+    AegisName: Gacha_Rank_3_Box
+    Name: Gacha Rank 3 Box
+    Type: Usable
+    Weight: 10
+    Trade:
+      NoDrop: true
+    Script: |
+      getitem 1300085,30;
+      getitem 6994,1;
+      getitem 6993,1;
+  - Id: 1200104
+    AegisName: Promotion_Refine_box
+    Name: Promotion Refine box
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",6228,6228,6228,6228,6232,6232,6232,6232,6993,6993,6993,6993,6994,6994,6994,6994,6238,6238,6238,6238,6239,6239,6239,6239,6584,6584,6585,6585,6870,6870,6876,6876,6871,6871,6877,6877,6878,6872,6873,6879),1;
+  - Id: 1200106
+    AegisName: Autoloot_Staff
+    Name: Autoloot Staff
+    Type: Delayconsume
+    Flags:
+      UniqueId: true
+    Delay:
+      Duration: 3000
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      TradePartner: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      atcommand "@autoloot";
+  - Id: 1200107
+    AegisName: Promotion_Drop_Shadow_box
+    Name: Promotion Drop Shadow box
+    Type: Usable
+    Buy: 20
+    Flags:
+      Container: true
+    Script: |
+      getitem callfunc("F_Rand",90224,90225,90226,90227,90228,90229,90227,90228,90229),1;
